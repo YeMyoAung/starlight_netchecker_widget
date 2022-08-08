@@ -4,10 +4,10 @@ class _IndicatorIcon extends ImplicitlyAnimatedWidget {
   final IconData icon;
   final double size;
   const _IndicatorIcon({
-    required super.duration,
+    required Duration duration,
     required this.icon,
     required this.size,
-  });
+  }) : super(duration: duration);
 
   @override
   ImplicitlyAnimatedWidgetState<_IndicatorIcon> createState() =>

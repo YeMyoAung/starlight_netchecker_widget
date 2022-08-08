@@ -12,7 +12,7 @@ class StarlightNetChecker extends StatefulWidget {
   final Duration duration;
   final Widget? customIndicator;
   const StarlightNetChecker({
-    super.key,
+    Key? key,
     required this.child,
     this.position = StarlightNetCheckerPosition.bottom,
     this.indicatorHeight = 30,
@@ -24,7 +24,7 @@ class StarlightNetChecker extends StatefulWidget {
     // this.errorIcon = Icons.error,
     this.duration = const Duration(milliseconds: 400),
     this.customIndicator,
-  });
+  }) : super(key: key);
 
   @override
   State<StarlightNetChecker> createState() => _StarlightNetCheckerState();

@@ -4,10 +4,10 @@ class _IndicatorText extends ImplicitlyAnimatedWidget {
   final String text;
   final double fontSize;
   const _IndicatorText({
-    required super.duration,
+    required Duration duration,
     required this.text,
     required this.fontSize,
-  });
+  }) : super(duration: duration);
 
   @override
   ImplicitlyAnimatedWidgetState<_IndicatorText> createState() =>
